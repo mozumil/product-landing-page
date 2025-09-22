@@ -1,0 +1,79 @@
+/* General & Typography */
+:root {
+    --primary-color: #3f51b5; /* A vibrant blue */
+    --secondary-color: #f4f4f4; /* Light gray for backgrounds */
+    --text-color: #333;
+    --light-text-color: #fff;
+    --border-radius: 8px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--light-text-color);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+}
+
+#header-img {
+    width: 150px;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+#nav-bar li {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    padding-top: 80px; /* To account for fixed header */
+    background: linear-gradient(to bottom, var(--secondary-color), #fff);
+}

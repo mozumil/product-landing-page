@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewMaster Coffee Machine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo-container">
+            <img id="header-img" src="https://via.placeholder.com/200x50.png?text=BrewMaster" alt="BrewMaster logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Your Perfect Brew, Every Time.</h1>
+        <p>Experience coffee like never before with the new BrewMaster smart machine.</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+            <input id="submit" type="submit" value="Get Started" class="btn">
+        </form>
+    </section>
+
+    <main>
+        <section id="features" class="container">
+            <div class="feature-item">
+                <i class="fa-solid fa-mug-hot fa-3x"></i>
+                <div class="text">
+                    <h2>Smart Brewing Technology</h2>
+                    <p>Customize your coffee's strength, temperature, and grind size from your phone.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-cloud fa-3x"></i>
+                <div class="text">
+                    <h2>Cloud-Powered Recipes</h2>
+                    <p>Discover new recipes and share your own with the BrewMaster community.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-seedling fa-3x"></i>
+                <div class="text">
+                    <h2>Sustainable Design</h2>
+                    <p>Made with recycled materials and energy-efficient components for a greener future.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="container">
+            <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="pricing" class="container">
+            <div class="price-card">
+                <h3>BrewMaster Lite</h3>
+                <h2>$199</h2>
+                <p>Perfect for personal use. All essential smart features.</p>
+                <ul>
+                    <li>Smart App Control</li>
+                    <li>Preset Recipes</li>
+                    <li>Eco-Friendly Design</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+            <div class="price-card">
+                <h3>BrewMaster Pro</h3>
+                <h2>$299</h2>
+                <p>For the true coffee connoisseur. Advanced features included.</p>
+                <ul>
+                    <li>All Lite features</li>
+                    <li>Custom Grinder Settings</li>
+                    <li>Automated Cleaning</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+    </main>

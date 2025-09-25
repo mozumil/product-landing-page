@@ -1,4 +1,4 @@
-
+/* General & Typography */
 :root {
     --primary-color: #3f51b5; /* A vibrant blue */
     --secondary-color: #f4f4f4; /* Light gray for backgrounds */
@@ -76,4 +76,197 @@ body {
     min-height: 80vh;
     padding-top: 80px; /* To account for fixed header */
     background: linear-gradient(to bottom, var(--secondary-color), #fff);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+#email {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2c3e98; /* A darker shade for hover */
+    transform: translateY(-2px);
+}
+
+/* Main Content Sections */
+main section {
+    padding: 80px 0;
+}
+
+/* Features Section */
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: left;
+    max-width: 800px;
+}
+
+.feature-item i {
+    color: var(--primary-color);
+    margin-right: 2rem;
+    min-width: 60px; /* Fixed width for icon */
+}
+
+.feature-item .text h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* How It Works Section */
+#how-it-works {
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+#video {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Pricing Section */
+#pricing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.price-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+.price-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price-card h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.price-card li {
+    margin: 0.5rem 0;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--text-color);
+    color: var(--light-text-color);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        padding: 1rem;
+        position: static;
+    }
+    
+    #nav-bar ul {
+        margin-top: 1rem;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .feature-item i {
+        margin-bottom: 1rem;
+    }
+
+    #video {
+        height: 300px;
+    }
+
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .price-card {
+        width: 100%;
+    }
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: var(--light-text-color);
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
 }

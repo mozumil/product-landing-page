@@ -39,7 +39,7 @@ A modern, responsive product landing page built with HTML5 and CSS3. Perfect for
 product-landing-page/
 ├── index.html
 ├── styles.css
-├── images/
+├── ScreenShot/
 ├── README.md
 ```
 
